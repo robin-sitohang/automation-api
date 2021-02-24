@@ -1,0 +1,102 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-02-24T07:43:53.375Z",
+    "end": "2021-02-24T07:43:55.606Z",
+    "duration": 2231,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3af67dd6-96c9-44a2-b224-53c19d950b9e",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2cbf969e-620b-4284-bf2c-e70ba331d70a",
+          "title": "List Artikel",
+          "fullFile": "C:\\Users\\spe\\Desktop\\automation-api\\api\\test\\inquiry-artikel.js",
+          "file": "\\api\\test\\inquiry-artikel.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "@get Sebagai user saya ingin menampilkan list artikel",
+              "fullTitle": "List Artikel @get Sebagai user saya ingin menampilkan list artikel",
+              "timedOut": false,
+              "duration": 2208,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = await page.getArtikelList();\nassert(response.status).to.equal(200);\nconsole.log(response)",
+              "err": {},
+              "uuid": "0c60e695-3a07-433c-8c39-4a005e4851cf",
+              "parentUUID": "2cbf969e-620b-4284-bf2c-e70ba331d70a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0c60e695-3a07-433c-8c39-4a005e4851cf"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2208,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 180000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 180000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "8.3.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports/mochawesome/"
+      },
+      "version": "5.2.0"
+    }
+  }
+}
